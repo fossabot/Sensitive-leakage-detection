@@ -24,6 +24,9 @@
             width: 100%;
             height: 200px;
         }
+        input[type="file"] {
+            margin-bottom: 10px;
+        }
         button {
             padding: 10px 15px;
             background-color: #007BFF;
@@ -56,10 +59,14 @@
 <body>
     <div class="container">
         <h1>Text Classifier</h1>
-        <form method="post">
+        <form method="post" enctype="multipart/form-data">
             <div class="form-group">
                 <label for="text">Enter Text (One line per entry):</label>
-                <textarea id="text" name="text" required></textarea>
+                <textarea id="text" name="text"></textarea>
+            </div>
+            <div class="form-group">
+                <label for="file">Upload Excel File (xlsx):</label>
+                <input type="file" id="file" name="file" accept=".xlsx">
             </div>
             <button type="submit">Classify</button>
         </form>
@@ -82,6 +89,12 @@
                         {% endfor %}
                     </tbody>
                 </table>
+            </div>
+        {% endif %}
+        {% if download_link is not none %}
+            <div class="result">
+                <h2>下载预测结果:</h2>
+                <a href="{{ download_link }}" download="predictions.xlsx">下载 Excel 文件</a>
             </div>
         {% endif %}
     </div>
