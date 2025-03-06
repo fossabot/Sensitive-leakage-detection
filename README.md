@@ -1,4 +1,6 @@
 # 基于AI的敏感信息检测
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Flao1a0%2FSensitive-leakage-detection.svg?type=shield)](https://app.fossa.com/projects/git%2Bgithub.com%2Flao1a0%2FSensitive-leakage-detection?ref=badge_shield)
+
 
 ## **分类目标**
 
@@ -40,3 +42,7 @@ weighted avg       0.83      0.66      0.59      1026
 4. **输出结果**：返回弱口令、Token或普通文本的分类结果。
 
 <img src="./assets/image-20250214172300198.png" alt="image-20250214172300198" style="zoom:80%;" />
+
+
+## License
+[![FOSSA Status](https://app.fossa.com/api/projects/git%2Bgithub.com%2Flao1a0%2FSensitive-leakage-detection.svg?type=large)](https://app.fossa.com/projects/git%2Bgithub.com%2Flao1a0%2FSensitive-leakage-detection?ref=badge_large)
